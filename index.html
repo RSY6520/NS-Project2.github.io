@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Age Calculator</title>
+        <link rel="stylesheet" href="agecalculator.css">
+    </head>
+    <body>
+
+        <!--Header starts here-->
+        <header>
+            <h1>Age Calculator</h1>
+            <h3>Calculate age from date of birth and current date</h3>
+        </header>
+        <!--Header ends here-->
+
+
+        <!--Container starts here-->
+        <div class="container">
+            <!--innercontainer starts here-->
+            <div class="innercontainer">
+                <div class="dob">
+                    <h3>Date of Birth:</h3>
+                    <form>
+                        <input type="number" id="dobday" class="inputshape dday" name="bday" placeholder="DD"  min="1" max="31">
+                        <input type="number" id="dobmonth" class="inputshape dmonth" name="bmonth" placeholder="MM" min="1" max="12">
+                        <input type="number" id="dobyear" class="inputshape dyear" name="byear" placeholder="YY"  min="1900" max="2100"> 
+                    </form>
+                </div>
+                
+                <div class="currdate">
+                    <h3>Age at the date of:</h3>
+                    <form>
+                        <input type="number" id="atday" class="inputshape aday" name="aday" placeholder="DD" min="1" max="31">
+                        <input type="number" id="atmonth" class="inputshape amonth" name="amonth" placeholder="MM"  min="1" max="12">
+                        <input type="number" id="atyear" class="inputshape ayear" name="ayear" placeholder="YY"  min="1900" max="2100">
+                    </form>
+                </div>
+
+                <div class="button">
+                    <div class="flexcontainer">
+                    <button type="button" class="calculate btn" onclick="calculateAge()"><strong>Calculate</strong></button>
+                    <button type="button" class="reset btn" onclick="toHide()"><strong>Reset</strong></button>
+                    </div>
+                </div>
+                
+                <div class="ageresult">
+                    <h3>Age Result</h3>
+                    <div class="results">
+                        <p>=<span id="years"></span>years</p>
+                        <p>= <span id="months"></span> months</p>
+                        <p>= <span id="weeks"></span> weeks</p>
+                        <p>= <span id="days"></span> days</p>
+                        <p>= <span id="hours"></span> hours</p>
+                        <p>= <span id="minutes"></span> minutes</p>
+                        <p>= <span id="seconds"></span> seconds</p>
+                    </div>
+                </div>
+            </div>    <!--innercontainer ends here-->
+
+        </div>        <!--Container ends here-->
+
+        <script src="agecalculator.js"></script>
+    </body>
+</html>

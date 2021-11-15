@@ -1,0 +1,67 @@
+header{
+    position: fixed;
+    top: 0px;
+    height: 18%;
+    width: 98.8%;
+    background-color: rgb(31, 122, 202);
+    z-index: 5;
+}
+body{
+    background-color: salmon;
+}
+header h1,header h3{
+    text-align: center;
+    line-height: 20px;
+}
+.container{
+    position: relative;
+    top: 100px;
+    height: 80%;
+}
+.innercontainer{
+    display: grid;
+    width: 100%;
+    background-color: aqua;
+}
+.dob,.currdate,.button,.ageresult{
+    margin: 0 auto;
+}
+.dday,.aday{
+    margin-right: 10px;
+}
+.dmonth,.amonth{
+    margin:0 10px;
+}
+.dyear,.ayear{
+    margin-left: 10px;
+}
+.inputshape{
+    width: 70px;
+    height: 20px;
+    font-size: 16px;
+    /* clear */
+}
+.results{
+    width: 280px;
+    height: 200px;
+    border: 2px solid rgb(238, 213, 213);
+}
+.results p{
+    text-align: left;
+    margin-left: 50px;
+    line-height: 7px;
+    font-size: 20px;
+}
+
+.btn{
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    margin: 0 30px;
+}
+.btn:hover{
+    background-color: rgb(101, 101, 228);
+}
+.button{
+    margin-top: 30px;
+}
